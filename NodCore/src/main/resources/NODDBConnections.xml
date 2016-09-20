@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+<!DOCTYPE DBConnections [
+
+<!ELEMENT DBConnections (DBConnection+)>
+<!ELEMENT DBConnection (DBConnectionName, DriverClass, 
+		DBURL, DBUserID,DBPassword)>
+
+<!ELEMENT DBConnectionName (#PCDATA)>
+<!ELEMENT DriverClass (#PCDATA)>
+<!ELEMENT DBURL (#PCDATA)>
+<!ELEMENT DBUserID (#PCDATA)>
+<!ELEMENT DBPassword (#PCDATA)>
+]>
+-->
+
+<!DOCTYPE DBConnections []>
+<DBConnections>
+    <DBConnection>
+        <DBConnectionName>MARIADBDEV01</DBConnectionName>
+        <DriverClass>org.mariadb.jdbc.Driver</DriverClass>
+        <DBURL>jdbc:mariadb://localhost:3306/test</DBURL>
+        <DBUserID></DBUserID>
+        <DBPassword></DBPassword>
+        <DBPassword1></DBPassword1>
+    </DBConnection>
+    
+    <DBConnection>
+        <DBConnectionName>ORACLEDBDEV01</DBConnectionName>
+        <DriverClass>oracle.jdbc.driver.OracleDriver</DriverClass>
+        <DBURL>jdbc:oracle:thin:@localhost:1521:xe</DBURL>
+        <DBUserID>attoracle</DBUserID>
+        <DBPassword>attoracle</DBPassword>
+    </DBConnection>
+    
+</DBConnections>
